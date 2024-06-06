@@ -22,6 +22,9 @@ const Index = () => {
           <Button as={Link} to="/contact" variant="link" color="white">
             Contact
           </Button>
+          <Button as={Link} to="/code-editor" variant="link" color="white">
+            Code Editor
+          </Button>
         </Flex>
       </Flex>
 
