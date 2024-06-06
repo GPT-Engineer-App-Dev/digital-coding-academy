@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, Heading, Image, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -60,21 +60,27 @@ const Index = () => {
                 Web Development
               </Heading>
               <Text mb={4}>Learn HTML, CSS, and JavaScript to build modern web applications.</Text>
-              <Button colorScheme="teal">Enroll Now</Button>
+              <Button as={Link} to="/courses/1" colorScheme="teal">
+                Enroll Now
+              </Button>
             </Box>
             <Box bg="white" p={6} shadow="md" borderRadius="md">
               <Heading as="h4" size="md" mb={4}>
                 Data Science
               </Heading>
               <Text mb={4}>Master Python and data analysis to uncover insights from data.</Text>
-              <Button colorScheme="teal">Enroll Now</Button>
+              <Button as={Link} to="/courses/2" colorScheme="teal">
+                Enroll Now
+              </Button>
             </Box>
             <Box bg="white" p={6} shadow="md" borderRadius="md">
               <Heading as="h4" size="md" mb={4}>
                 Machine Learning
               </Heading>
               <Text mb={4}>Dive into machine learning algorithms and build intelligent systems.</Text>
-              <Button colorScheme="teal">Enroll Now</Button>
+              <Button as={Link} to="/courses/3" colorScheme="teal">
+                Enroll Now
+              </Button>
             </Box>
           </Stack>
         </Container>
